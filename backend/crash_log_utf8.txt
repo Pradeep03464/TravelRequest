@@ -1,0 +1,617 @@
+﻿
+> ], RemoteException
+      + 
+FullyQualifiedError 
+     Id : 
+NativeCommandErr  
+    or
+   
+  WARNING: 
+  java.lang.System::load 
+  has been called by 
+org.apa
+  che.tomcat.jni.Library 
+in 
+  an unnamed module 
+(jar:nes
+  
+ted:/C:/Users/vikas/Downlo
+> 2026-04-01T23:14:11.890+
+05:30  WARN 4420 --- 
+[backend] [           
+main] ConfigServletWebServ
+erApplicationContext : 
+Exception encountered 
+during context 
+initialization - 
+cancelling refresh 
+attempt: org.springframewo
+rk.beans.factory.Unsatisfi
+edDependencyException: 
+Error creating bean with 
+name 'travelRequestControl
+ler': Unsatisfied 
+dependency expressed 
+through field 'travelReque
+stRepository': Error 
+creating bean with name 
+'travelRequestRepository' 
+defined in com.travel.back
+end.repository.TravelReque
+stRepository defined in 
+@EnableJpaRepositories 
+declared on JpaRepositorie
+sRegistrar.EnableJpaReposi
+toriesConfiguration: 
+Could not create query 
+for public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser(); 
+Reason: Validation failed 
+for query for method 
+public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser()
+  2026-04-01T23:14:11.892+
+05:30  INFO 4420 --- 
+[backend] [           
+main] j.LocalContainerEnti
+tyManagerFactoryBean : 
+Closing JPA 
+EntityManagerFactory for 
+persistence unit 'default'
+  2026-04-01T23:14:11.896+
+05:30  INFO 4420 --- 
+[backend] [           
+main] com.zaxxer.hikari.Hi
+kariDataSource       : 
+HikariPool-1 - Shutdown 
+initiated...
+  2026-04-01T23:14:11.912+
+05:30  INFO 4420 --- 
+[backend] [           
+main] com.zaxxer.hikari.Hi
+kariDataSource       : 
+HikariPool-1 - Shutdown 
+completed.
+  2026-04-01T23:14:11.915+
+05:30  INFO 4420 --- 
+[backend] [           
+main] o.apache.catalina.co
+re.StandardService   : 
+Stopping service [Tomcat]
+  2026-04-01T23:14:11.927+
+05:30  INFO 4420 --- 
+[backend] [           
+main] .s.b.a.l.ConditionEv
+aluationReportLogger : 
+  
+  Error starting 
+ApplicationContext. To 
+display the condition 
+evaluation report re-run 
+your application with 
+'debug' enabled.
+  2026-04-01T23:14:11.947+
+05:30 ERROR 4420 --- 
+[backend] [           
+main] o.s.boot.SpringAppli
+cation               : 
+Application run failed
+  
+> org.springframework.bean
+s.factory.UnsatisfiedDepen
+dencyException: Error 
+creating bean with name 't
+ravelRequestController': 
+Unsatisfied dependency 
+expressed through field 't
+ravelRequestRepository': 
+Error creating bean with 
+name 
+'travelRequestRepository' 
+defined in com.travel.back
+end.repository.TravelReque
+stRepository defined in 
+@EnableJpaRepositories 
+declared on JpaRepositorie
+sRegistrar.EnableJpaReposi
+toriesConfiguration: 
+Could not create query 
+for public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser(); 
+Reason: Validation failed 
+for query for method 
+public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser()
+  	at org.springframework.
+beans.factory.annotation.A
+utowiredAnnotationBeanPost
+Processor$AutowiredFieldEl
+ement.resolveFieldValue(Au
+towiredAnnotationBeanPostP
+rocessor.java:788) ~[sprin
+g-beans-6.2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.annotation.A
+utowiredAnnotationBeanPost
+Processor$AutowiredFieldEl
+ement.inject(AutowiredAnno
+tationBeanPostProcessor.ja
+va:768) ~[spring-beans-6.2
+.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.annotation.I
+njectionMetadata.inject(In
+jectionMetadata.java:146) 
+~[spring-beans-6.2.3.jar!/
+:6.2.3]
+  	at org.springframework.
+beans.factory.annotation.A
+utowiredAnnotationBeanPost
+Processor.postProcessPrope
+rties(AutowiredAnnotationB
+eanPostProcessor.java:509)
+ ~[spring-beans-6.2.3.jar!
+/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractAutowireCapableBeanFac
+tory.populateBean(Abstract
+AutowireCapableBeanFactory
+.java:1445) ~[spring-beans
+-6.2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractAutowireCapableBeanFac
+tory.doCreateBean(Abstract
+AutowireCapableBeanFactory
+.java:600) ~[spring-beans-
+6.2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractAutowireCapableBeanFac
+tory.createBean(AbstractAu
+towireCapableBeanFactory.j
+ava:523) ~[spring-beans-6.
+2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractBeanFactory.lambda$doG
+etBean$0(AbstractBeanFacto
+ry.java:339) ~[spring-bean
+s-6.2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Defa
+ultSingletonBeanRegistry.g
+etSingleton(DefaultSinglet
+onBeanRegistry.java:346) ~
+[spring-beans-6.2.3.jar!/:
+6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractBeanFactory.doGetBean(
+AbstractBeanFactory.java:3
+37) ~[spring-beans-6.2.3.j
+ar!/:6.2.3]
+> Caused by: org.springfra
+mework.beans.factory.BeanC
+reationException: Error 
+creating bean with name 
+'travelRequestRepository' 
+defined in com.travel.back
+end.repository.TravelReque
+stRepository defined in 
+@EnableJpaRepositories 
+declared on JpaRepositorie
+sRegistrar.EnableJpaReposi
+toriesConfiguration: 
+Could not create query 
+for public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser(); 
+Reason: Validation failed 
+for query for method 
+public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser()
+  	at org.springframework.
+beans.factory.support.Abst
+ractAutowireCapableBeanFac
+tory.initializeBean(Abstra
+ctAutowireCapableBeanFacto
+ry.java:1812) ~[spring-bea
+ns-6.2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractAutowireCapableBeanFac
+tory.doCreateBean(Abstract
+AutowireCapableBeanFactory
+.java:601) ~[spring-beans-
+6.2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractAutowireCapableBeanFac
+tory.createBean(AbstractAu
+towireCapableBeanFactory.j
+ava:523) ~[spring-beans-6.
+2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractBeanFactory.lambda$doG
+etBean$0(AbstractBeanFacto
+ry.java:339) ~[spring-bean
+s-6.2.3.jar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Defa
+ultSingletonBeanRegistry.g
+etSingleton(DefaultSinglet
+onBeanRegistry.java:346) ~
+[spring-beans-6.2.3.jar!/:
+6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractBeanFactory.doGetBean(
+AbstractBeanFactory.java:3
+37) ~[spring-beans-6.2.3.j
+ar!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Abst
+ractBeanFactory.getBean(Ab
+stractBeanFactory.java:202
+) ~[spring-beans-6.2.3.jar
+!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Defa
+ultListableBeanFactory.doR
+esolveDependency(DefaultLi
+stableBeanFactory.java:160
+6) ~[spring-beans-6.2.3.ja
+r!/:6.2.3]
+  	at org.springframework.
+beans.factory.support.Defa
+ultListableBeanFactory.res
+olveDependency(DefaultList
+ableBeanFactory.java:1552)
+ ~[spring-beans-6.2.3.jar!
+/:6.2.3]
+  	at org.springframework.
+beans.factory.annotation.A
+utowiredAnnotationBeanPost
+Processor$AutowiredFieldEl
+ement.resolveFieldValue(Au
+towiredAnnotationBeanPostP
+rocessor.java:785) ~[sprin
+g-beans-6.2.3.jar!/:6.2.3]
+> Caused by: org.springfra
+mework.data.repository.que
+ry.QueryCreationException:
+ Could not create query 
+for public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser(); 
+Reason: Validation failed 
+for query for method 
+public abstract 
+java.util.List com.travel.
+backend.repository.TravelR
+equestRepository.findAllRe
+questsJoinedWithUser()
+> 	at org.springframework.
+data.repository.query.Quer
+yCreationException.create(
+QueryCreationException.jav
+a:101) ~[spring-data-commo
+ns-3.4.3.jar!/:3.4.3]
+  	at org.springframework.
+data.repository.core.suppo
+rt.QueryExecutorMethodInte
+rceptor.lookupQuery(QueryE
+xecutorMethodInterceptor.j
+ava:120) ~[spring-data-com
+mons-3.4.3.jar!/:3.4.3]
+  	at org.springframework.
+data.repository.core.suppo
+rt.QueryExecutorMethodInte
+rceptor.mapMethodsToQuery(
+QueryExecutorMethodInterce
+ptor.java:104) ~[spring-da
+ta-commons-3.4.3.jar!/:3.4
+.3]
+  	at org.springframework.
+data.repository.core.suppo
+rt.QueryExecutorMethodInte
+rceptor.lambda$new$0(Query
+ExecutorMethodInterceptor.
+java:92) ~[spring-data-com
+mons-3.4.3.jar!/:3.4.3]
+  	at java.base/java.util.
+Optional.map(Optional.java
+:260) ~[na:na]
+  	at org.springframework.
+data.repository.core.suppo
+rt.QueryExecutorMethodInte
+rceptor.<init>(QueryExecut
+orMethodInterceptor.java:9
+2) ~[spring-data-commons-3
+.4.3.jar!/:3.4.3]
+  	at org.springframework.
+data.repository.core.suppo
+rt.RepositoryFactorySuppor
+t.getRepository(Repository
+FactorySupport.java:440) ~
+[spring-data-commons-3.4.3
+.jar!/:3.4.3]
+  	at org.springframework.
+data.repository.core.suppo
+rt.RepositoryFactoryBeanSu
+pport.lambda$afterProperti
+esSet$4(RepositoryFactoryB
+eanSupport.java:350) ~[spr
+ing-data-commons-3.4.3.jar
+!/:3.4.3]
+  	at org.springframework.
+data.util.Lazy.getNullable
+(Lazy.java:135) ~[spring-d
+ata-commons-3.4.3.jar!/:3.
+4.3]
+  	at org.springframework.
+data.util.Lazy.get(Lazy.ja
+va:113) ~[spring-data-comm
+ons-3.4.3.jar!/:3.4.3]
+  	at org.springframework.
+data.repository.core.suppo
+rt.RepositoryFactoryBeanSu
+pport.afterPropertiesSet(R
+epositoryFactoryBeanSuppor
+t.java:356) ~[spring-data-
+commons-3.4.3.jar!/:3.4.3]
+> Caused by: java.lang.Ill
+egalArgumentException: 
+Validation failed for 
+query for method public 
+abstract java.util.List co
+m.travel.backend.repositor
+y.TravelRequestRepository.
+findAllRequestsJoinedWithU
+ser()
+  	at org.springframework.
+data.jpa.repository.query.
+SimpleJpaQuery.validateQue
+ry(SimpleJpaQuery.java:97)
+ ~[spring-data-jpa-3.4.3.j
+ar!/:3.4.3]
+  	at org.springframework.
+data.jpa.repository.query.
+SimpleJpaQuery.<init>(Simp
+leJpaQuery.java:67) ~[spri
+ng-data-jpa-3.4.3.jar!/:3.
+4.3]
+  	at org.springframework.
+data.jpa.repository.query.
+JpaQueryFactory.fromMethod
+WithQueryString(JpaQueryFa
+ctory.java:49) ~[spring-da
+ta-jpa-3.4.3.jar!/:3.4.3]
+  	at org.springframework.
+data.jpa.repository.query.
+JpaQueryLookupStrategy$Dec
+laredQueryLookupStrategy.r
+esolveQuery(JpaQueryLookup
+Strategy.java:174) ~[sprin
+g-data-jpa-3.4.3.jar!/:3.4
+.3]
+  	at org.springframework.
+data.jpa.repository.query.
+JpaQueryLookupStrategy$Cre
+ateIfNotFoundQueryLookupSt
+rategy.resolveQuery(JpaQue
+ryLookupStrategy.java:256)
+ ~[spring-data-jpa-3.4.3.j
+ar!/:3.4.3]
+  	at org.springframework.
+data.jpa.repository.query.
+JpaQueryLookupStrategy$Abs
+tractQueryLookupStrategy.r
+esolveQuery(JpaQueryLookup
+Strategy.java:99) ~[spring
+-data-jpa-3.4.3.jar!/:3.4.
+3]
+  	at org.springframework.
+data.repository.core.suppo
+rt.QueryExecutorMethodInte
+rceptor.lookupQuery(QueryE
+xecutorMethodInterceptor.j
+ava:116) ~[spring-data-com
+mons-3.4.3.jar!/:3.4.3]
+  	... 48 common frames 
+omitted
+> Caused by: java.lang.Ill
+egalArgumentException: org
+.hibernate.query.SemanticE
+xception: Missing 
+constructor for type 'Trav
+elRequestWithUserDTO' 
+[SELECT new com.travel.bac
+kend.payload.response.Trav
+elRequestWithUserDTO(tr.id
+, u.name, u.email, 
+u.role, tr.travelType, 
+tr.fromLocation, 
+tr.toLocation, 
+tr.travelMode, 
+CAST(tr.departureDate AS 
+string), 
+CAST(tr.returnDate AS 
+string), CAST(tr.status 
+AS string), tr.purpose) 
+FROM TravelRequest tr 
+JOIN tr.employee u]
+> 	at org.hibernate.intern
+al.ExceptionConverterImpl.
+convert(ExceptionConverter
+Impl.java:143) ~[hibernate
+-core-6.6.8.Final.jar!/:6.
+6.8.Final]
+> 	at org.hibernate.intern
+al.ExceptionConverterImpl.
+convert(ExceptionConverter
+Impl.java:167) ~[hibernate
+-core-6.6.8.Final.jar!/:6.
+6.8.Final]
+> 	at org.hibernate.intern
+al.ExceptionConverterImpl.
+convert(ExceptionConverter
+Impl.java:173) ~[hibernate
+-core-6.6.8.Final.jar!/:6.
+6.8.Final]
+  	at org.hibernate.intern
+al.AbstractSharedSessionCo
+ntract.createQuery(Abstrac
+tSharedSessionContract.jav
+a:886) ~[hibernate-core-6.
+6.8.Final.jar!/:6.6.8.Fina
+l]
+  	at org.hibernate.intern
+al.AbstractSharedSessionCo
+ntract.createQuery(Abstrac
+tSharedSessionContract.jav
+a:796) ~[hibernate-core-6.
+6.8.Final.jar!/:6.6.8.Fina
+l]
+  	at org.hibernate.intern
+al.AbstractSharedSessionCo
+ntract.createQuery(Abstrac
+tSharedSessionContract.jav
+a:143) ~[hibernate-core-6.
+6.8.Final.jar!/:6.6.8.Fina
+l]
+  	at java.base/jdk.intern
+al.reflect.DirectMethodHan
+dleAccessor.invoke(DirectM
+ethodHandleAccessor.java:1
+04) ~[na:na]
+  	at java.base/java.lang.
+reflect.Method.invoke(Meth
+od.java:565) ~[na:na]
+  	at org.springframework.
+orm.jpa.ExtendedEntityMana
+gerCreator$ExtendedEntityM
+anagerInvocationHandler.in
+voke(ExtendedEntityManager
+Creator.java:364) ~[spring
+-orm-6.2.3.jar!/:6.2.3]
+  	at jdk.proxy2/jdk.proxy
+2.$Proxy123.createQuery(Un
+known Source) ~[na:na]
+  	at org.springframework.
+data.jpa.repository.query.
+SimpleJpaQuery.validateQue
+ry(SimpleJpaQuery.java:91)
+ ~[spring-data-jpa-3.4.3.j
+ar!/:3.4.3]
+  	... 54 common frames 
+omitted
+> Caused by: org.hibernate
+.query.SemanticException: 
+Missing constructor for 
+type 'TravelRequestWithUse
+rDTO' [SELECT new com.trav
+el.backend.payload.respons
+e.TravelRequestWithUserDTO
+(tr.id, u.name, u.email, 
+u.role, tr.travelType, 
+tr.fromLocation, 
+tr.toLocation, 
+tr.travelMode, 
+CAST(tr.departureDate AS 
+string), 
+CAST(tr.returnDate AS 
+string), CAST(tr.status 
+AS string), tr.purpose) 
+FROM TravelRequest tr 
+JOIN tr.employee u]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitInstantiation
+(SemanticQueryBuilder.java
+:1511) ~[hibernate-core-6.
+6.8.Final.jar!/:6.6.8.Fina
+l]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitInstantiation
+(SemanticQueryBuilder.java
+:277) ~[hibernate-core-6.6
+.8.Final.jar!/:6.6.8.Final
+]
+  	at org.hibernate.gramma
+rs.hql.HqlParser$Instantia
+tionContext.accept(HqlPars
+er.java:4034) ~[hibernate-
+core-6.6.8.Final.jar!/:6.6
+.8.Final]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitSelectableNod
+e(SemanticQueryBuilder.jav
+a:1458) ~[hibernate-core-6
+.6.8.Final.jar!/:6.6.8.Fin
+al]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitSelection(Sem
+anticQueryBuilder.java:141
+2) ~[hibernate-core-6.6.8.
+Final.jar!/:6.6.8.Final]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitSelectClause(
+SemanticQueryBuilder.java:
+1405) ~[hibernate-core-6.6
+.8.Final.jar!/:6.6.8.Final
+]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitQuery(Semanti
+cQueryBuilder.java:1254) ~
+[hibernate-core-6.6.8.Fina
+l.jar!/:6.6.8.Final]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitQuerySpecExpr
+ession(SemanticQueryBuilde
+r.java:1040) ~[hibernate-c
+ore-6.6.8.Final.jar!/:6.6.
+8.Final]
+  	at org.hibernate.query.
+hql.internal.SemanticQuery
+Builder.visitQuerySpecExpr
+ession(SemanticQueryBuilde
+r.java:277) ~[hibernate-co
+re-6.6.8.Final.jar!/:6.6.8
+.Final]
+  	at org.hibernate.gramma
+rs.hql.HqlParser$QuerySpec
+ExpressionContext.accept(H
+qlParser.java:2134) ~[hibe
+rnate-core-6.6.8.Final.jar
+!/:6.6.8.Final]
+
+

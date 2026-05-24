@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6366f1;
+  --primary-glow: rgba(99, 102, 241, 0.5);
+  --secondary: #008cff;
+  --accent: #f43f5e;
+  --surface: #ffffff;
+  --background: #f8fafc;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 antialiased;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.05) 0, transparent 50%), 
+      radial-gradient(at 100% 0%, rgba(0, 140, 255, 0.05) 0, transparent 50%);
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+@layer components {
+  /* Colorful Gradient Theme */
+  
+  .mmt-gradient {
+    @apply bg-gradient-to-br from-[#6366f1] via-[#008cff] to-[#00d2ff];
+    background-size: 200% 200%;
+    animation: gradient-flow 15s ease infinite;
+  }
+
+  @keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .mmt-card {
+    @apply bg-white rounded-[2.5rem] border border-white shadow-2xl shadow-indigo-500/5 transition-all duration-500;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-2xl bg-white/70 border border-white/40 shadow-2xl;
+  }
+
+  .mmt-input {
+    @apply w-full px-6 py-4 bg-slate-50/50 border-2 border-slate-100 rounded-2xl focus:border-[#6366f1] focus:bg-white focus:ring-4 focus:ring-indigo-500/10 transition-all font-bold text-slate-900 placeholder:text-slate-400 outline-none placeholder:font-medium;
+  }
+
+  .btn-mmt-primary {
+    @apply mmt-gradient text-white font-black px-10 py-5 rounded-2xl flex items-center justify-center gap-3 shadow-[0_20px_40px_-15px_rgba(99,102,241,0.5)] hover:scale-[1.03] active:scale-[0.97] transition-all;
+  }
+
+  .btn-mmt-outline {
+    @apply px-8 py-4 border-2 border-[#6366f1] text-[#6366f1] font-black rounded-2xl transition-all duration-300 hover:bg-indigo-50 active:scale-95 uppercase tracking-widest text-xs;
+  }
+
+  .booking-widget-input-wrapper {
+    @apply grid grid-cols-1 md:grid-cols-4 gap-0 border-2 border-slate-100 rounded-3xl overflow-hidden mb-8 bg-white shadow-inner;
+  }
+
+  .booking-widget-cell {
+    @apply p-6 border-b md:border-b-0 md:border-r border-slate-100 hover:bg-blue-50/50 transition-all cursor-pointer relative;
+  }
+
+  .booking-widget-cell:last-child {
+    @apply border-none;
+  }
+
+  .nav-link {
+    @apply flex flex-col items-center gap-1.5 text-slate-500 hover:text-[#6366f1] font-black tracking-wider transition-all px-5 py-3 rounded-2xl hover:bg-indigo-50/50;
+  }
+
+  .nav-link-active {
+    @apply text-[#6366f1] bg-indigo-50 shadow-inner;
+  }
+
+  /* Hero Section Component */
+  .hero-bg {
+    @apply relative overflow-hidden bg-indigo-600 min-h-[450px];
+    background-image: url('/assets/images/hero.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-bg::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-indigo-900/90 via-indigo-600/70 to-blue-500/20 z-0;
+  }
+
+  .status-badge {
+    @apply px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border;
+  }
+
+  .status-pending {
+    @apply bg-amber-50 text-amber-600 border-amber-200 shadow-[0_0_15px_-5px_rgba(245,158,11,0.3)];
+  }
+
+  .status-approved {
+    @apply bg-emerald-50 text-emerald-600 border-emerald-200 shadow-[0_0_15px_-5px_rgba(16,185,129,0.3)];
+  }
+
+  .status-rejected {
+    @apply bg-rose-50 text-rose-600 border-rose-200 shadow-[0_0_15px_-5px_rgba(244,63,94,0.3)];
+  }
+
+  .status-booked {
+    @apply bg-indigo-50 text-indigo-600 border-indigo-200 shadow-[0_0_15px_-5px_rgba(99,102,241,0.3)];
+  }
+
+  .glass-light {
+    @apply backdrop-blur-md bg-white/70 border border-white/20;
+  }
+
+  .text-gradient-mmt {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#008cff] to-[#015197];
+  }
+}
+
+/* Custom UI Utilities */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full hover:bg-slate-400 transition-colors;
+}
